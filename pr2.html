@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="utf-8">
+		<title>Форма зворотного зв'язку</title>
+	</head>
+	<body>
+		<div style="width:300px">
+			<form method="post">
+				<fieldset>
+					<legend>Персональна інформація</legend>
+						<span>Name</span><span style="color:red">*</span><br>
+						<input required type="text" name="name" placeholder="your name"><br>
+						<span>Email</span><span style="color:red">*</span><br>
+						<input required type="email" name="email" placeholder="your email">
+				</fieldset>
+				<fieldset>
+					<legend>Додаткова інформація</legend>
+						<span>Стать</span><span style="color:red">*</span><br>
+						<label><input required type="radio" name="gender" value="male">Чоловік</label><br>
+						<label><input required type="radio" name="gender" value="female">Жінка</label><br>
+						<br>
+						<span>Поточний статус</span><br>
+						<label><input type="checkbox" name="status" value="student">Студент</label><br>
+						<label><input type="checkbox" name="status" value="employee">Працівник</label><br>
+						<label><input type="checkbox" name="status" value="unemployed">Безробітний</label><br>
+						<br>
+						<span>Дата народження</span><span style="color:red">*</span><br>
+						<input required type="date" name="birthdate"><br>
+						<br>
+						<span>Навички та технології</span><span style="color:red">*</span><br>
+						<select required name="skills" multiple size="9">
+							<optgroup label="Tech skills">
+								<option>HTML</option>
+								<option>CSS</option>
+								<option>JavaScript</option>
+								<option>ASP.NET</option>
+							</optgroup>
+							<optgroup label="Soft skills">
+								<option>Тайм-менеджмент</option>
+								<option>Командна робота</option>
+								<option>Лідерство</option>
+							</optgroup>
+						</select><br>
+						<br>
+						<span>Досвід (в роках)</span><br>
+						<input type="number" name="experience" min="0" max="25" step="0.5" value="1.5"> років<br>
+						<br>
+						<span>Фотографія</span><br>
+						<input type="file" name="photo"><br>
+						<br>
+						<span>Коментарій</span><br>
+						<textarea name="comment" rows="9" style="width:230px"></textarea>
+				</fieldset>
+				<br>
+				<input type="submit">
+				<input type="reset">
+			</form>
+		</div>
+	</body>
+</html>
