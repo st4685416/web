@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang = "uk">
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<title>Тортики & Тістечка</title>
+	<link rel = "stylesheet" href = "style.css">
+	<link href = "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel = "stylesheet">
+</head>
+<body>
+
+<input type = "radio" name = "filter" id = "filter-all" checked>
+<input type = "radio" name = "filter" id = "filter-pie">
+<input type = "radio" name = "filter" id = "filter-cake">
+<input type = "radio" name = "filter" id = "filter-roll">
+<input type = "radio" name = "filter" id = "filter-cheesecake">
+<input type = "radio" name = "filter" id = "filter-cupcake">
+
+<div class = "container">
+
+	<header class = "header">
+		<h1>Тортики <span>&</span> Тістечка</h1>
+	</header>
+
+	<aside class = "sidebar">
+		<div class = "sidebar-block">
+			<div class = "calorie-widget">
+				<div class = "widget-header">
+					<p class = "widget-title">Калорії у порції</p>
+					<div class = "dual-range-wrapper">
+						<input type = "range" min = "0" max = "400" value = "0" id = "range1">
+						<input type = "range" min = "0" max = "400" value = "400" id = "range2">
+					</div>
+					<p class = "widget-value">Від 0 до 400 кКал</p>
+				</div>
+			</div>
+
+			<div class = "filter-buttons">
+				<label for = "filter-pie" class = "filter-btn">Пиріг</label>
+				<label for = "filter-roll" class = "filter-btn">Рулет</label>
+				<label for = "filter-cheesecake" class = "filter-btn">Сирники</label>
+				<label for = "filter-cupcake" class = "filter-btn">Тістечко</label>
+				<label for = "filter-cake" class = "filter-btn">Торт</label>
+				<label for = "filter-all" class = "filter-btn reset">Скинути фільтр</label>
+			</div>
+		</div>
+	</aside>
+
+	<main class = "gallery">
+
+		<article class = "card type-cake">
+			<div class = "card-top">
+				<div class = "card-img-wrapper">
+					<img src = "https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt = "Сметанковий">
+				</div>
+				<div class = "card-text">
+					<span class = "product-type">Торт:</span>
+					<h3 class = "product-name">Сметанковий</h3>
+				</div>
+			</div>
+			<div class = "card-bottom">
+				<p class = "card-calories">Калорії у порції 265 кКал</p>
+			</div>
+		</article>
+
+		<article class = "card type-cupcake">
+			<div class = "card-top">
+				<div class = "card-img-wrapper">
+					<img src = "https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt = "Мафін">
+				</div>
+				<div class = "card-text">
+					<span class = "product-type">Тістечко:</span>
+					<h3 class = "product-name">Мафін</h3>
+				</div>
+			</div>
+			<div class = "card-bottom">
+				<p class = "card-calories">Калорії у порції 305 кКал</p>
+			</div>
+		</article>
+
+		<article class = "card type-cheesecake">
+			<div class = "card-top">
+				<div class = "card-img-wrapper">
+					<img src = "https://images.unsplash.com/photo-1567327613485-fbc7bf196198?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt = "Три ягоди">
+				</div>
+				<div class = "card-text">
+					<span class = "product-type">Сирники:</span>
+					<h3 class = "product-name">Три ягоди</h3>
+				</div>
+			</div>
+			<div class = "card-bottom">
+				<p class = "card-calories">Калорії у порції 450 кКал</p>
+			</div>
+		</article>
+
+		<article class = "card type-cake">
+			<div class = "card-top">
+				<div class = "card-img-wrapper">
+					<img src = "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt = "Смачний">
+				</div>
+				<div class = "card-text">
+					<span class = "product-type">Торт:</span>
+					<h3 class = "product-name">Смачний</h3>
+				</div>
+			</div>
+			<div class = "card-bottom">
+				<p class = "card-calories">Калорії у порції 523 кКал</p>
+			</div>
+		</article>
+
+		<article class = "card type-roll">
+			<div class = "card-top">
+				<div class = "card-img-wrapper">
+					<img src = "https://images.unsplash.com/photo-1626263468007-a9e0cf83f1ac?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt = "Святковий">
+				</div>
+				<div class = "card-text">
+					<span class = "product-type">Рулет:</span>
+					<h3 class = "product-name">Святковий</h3>
+				</div>
+			</div>
+			<div class = "card-bottom">
+				<p class = "card-calories">Калорії у порції 380 кКал</p>
+			</div>
+		</article>
+
+		<article class = "card type-pie">
+			<div class = "card-top">
+				<div class = "card-img-wrapper">
+					<img src = "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt = "Свято у бабусі">
+				</div>
+				<div class = "card-text">
+					<span class = "product-type">Пиріг:</span>
+					<h3 class = "product-name">Свято у бабусі</h3>
+				</div>
+			</div>
+			<div class = "card-bottom">
+				<p class = "card-calories">Калорії у порції 298 кКал</p>
+			</div>
+		</article>
+
+		<article class = "card type-cake">
+			<div class = "card-top">
+				<div class = "card-img-wrapper">
+					<img src = "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt = "Ведмедик">
+				</div>
+				<div class = "card-text">
+					<span class = "product-type">Торт:</span>
+					<h3 class = "product-name">Ведмедик</h3>
+				</div>
+			</div>
+			<div class = "card-bottom">
+				<p class = "card-calories">Калорії у порції 600 кКал</p>
+			</div>
+		</article>
+
+		<article class = "card type-cupcake">
+			<div class = "card-top">
+				<div class = "card-img-wrapper">
+					<img src = "https://images.unsplash.com/photo-1519340333755-56e9c1d04579?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt = "Живі квіти">
+				</div>
+				<div class = "card-text">
+					<span class = "product-type">Тістечко:</span>
+					<h3 class = "product-name">Живі квіти</h3>
+				</div>
+			</div>
+			<div class = "card-bottom">
+				<p class = "card-calories">Калорії у порції 438 кКал</p>
+			</div>
+		</article>
+
+		<article class = "card type-cupcake">
+			<div class = "card-top">
+				<div class = "card-img-wrapper">
+					<img src = "https://images.unsplash.com/photo-1621303837174-89787a7d4729?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt = "Лимонне">
+				</div>
+				<div class = "card-text">
+					<span class = "product-type">Тістечко:</span>
+					<h3 class = "product-name">Лимонне з маком</h3>
+				</div>
+			</div>
+			<div class = "card-bottom">
+				<p class = "card-calories">Калорії у порції 348 кКал</p>
+			</div>
+		</article>
+
+	</main>
+
+	<footer class = "footer">
+		<p>Контакти: <a href = "mailto:tortik@smakota.ua">tortik@smakota.ua</a></p>
+		<p>© 2019 Smakota</p>
+	</footer>
+</div>
+</body>
+</html>
